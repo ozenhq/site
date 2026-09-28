@@ -15,5 +15,6 @@ jobs:
       - uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          wranglerVersion: "4.143.0"
           # main goes live on ozenhq.com; a pull request uploads a version and prints its preview URL
           command: ${{ github.event_name == 'push' && 'deploy' || 'versions upload' }}
