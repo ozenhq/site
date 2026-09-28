@@ -1,0 +1,9 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ozen-site",
+  "account_id": "310eb46da2d4df89cd07c84b9ad90243",
+  "compatibility_date": "2026-09-26",
+  "preview_urls": true,
+  "assets": { "directory": "public" },
+  "routes": [{ "pattern": "ozenhq.com", "custom_domain": true }]
+}
